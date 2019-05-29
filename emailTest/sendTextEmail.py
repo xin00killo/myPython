@@ -13,10 +13,10 @@ on_off = 1
 # 第三方 smtp服务配置
 mail_host = 'smtp.163.com'
 mail_user = 'xin00killo@163.com'
-mail_pass = '999999999'
+mail_pass = '99999'
 # 邮件属性配置
 sender = 'xin00killo@163.com'
-receivers = 'xin01killo@163.com'
+receivers = ['xin01killo@163.com', 'xin02killo@163.com']
 # ['xin00killo@163.com', 'xin01killo@163.com']
 
 #三个参数， 第一个为文本内容，第二个plain设置文本格式，第3个urf-8设置编码
@@ -30,9 +30,9 @@ msg = MIMEText('''
 # msg['From'] = Header(' xin01killo')
 # msg['To'] = Header('xin02killo')
 msg['From'] = "xin00killo<xin00killo@163.com>"
-msg['To'] = "xin01killo<xin01killo@163.com>"
-
-subject = 'wyxces python email'
+# msg['To'] =
+msg['To'] = ','.join(["xin01killo<xin01killo@163.com>", "xin02killo<xin02killo@163.com>"])
+subject = 'wyxces python email0019'
 msg['Subject'] = Header(subject, 'utf-8')
 
 
