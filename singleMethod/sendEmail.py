@@ -13,7 +13,7 @@ on_off = 1
 # 第三方 smtp服务配置
 mail_host = 'smtp.163.com'
 mail_user = 'xin00killo@163.com'
-mail_pass = 'xin00killo'
+mail_pass = '999999999'
 # 邮件属性配置
 sender = 'xin00killo@163.com'
 receivers = 'xin01killo@163.com'
