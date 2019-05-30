@@ -7,13 +7,10 @@ from email.header import Header
 
 
 mail_port =25
-
-content = "所有接口测试用例已经执行完毕，请查收附件，查看详情！"
-on_off = 1
 # 第三方 smtp服务配置
 mail_host = 'smtp.163.com'
 mail_user = 'xin00killo@163.com'
-mail_pass = '99999'
+mail_pass = 'xin00killo'
 # 邮件属性配置
 sender = 'xin00killo@163.com'
 receivers = ['xin01killo@163.com', 'xin02killo@163.com']
@@ -30,7 +27,6 @@ msg = MIMEText('''
 # msg['From'] = Header(' xin01killo')
 # msg['To'] = Header('xin02killo')
 msg['From'] = "xin00killo<xin00killo@163.com>"
-# msg['To'] =
 msg['To'] = ','.join(["xin01killo<xin01killo@163.com>", "xin02killo<xin02killo@163.com>"])
 subject = 'wyxces python email0019'
 msg['Subject'] = Header(subject, 'utf-8')

@@ -8,7 +8,7 @@ from email.header import Header
 mail_port = 25
 mail_host = 'smtp.163.com'
 mail_user = 'xin00killo@163.com'
-mail_pass = '9999'
+mail_pass = '99999'
 
 sender = 'xin00killo@163.com'
 receivers = ['xin01killo@163.com', 'xin02killo@163.com']

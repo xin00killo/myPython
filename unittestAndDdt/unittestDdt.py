@@ -54,7 +54,7 @@ class UnittestDdt(unittest.TestCase):
         except AssertionError as msg:
             print(msg)
 
-    @file_data(r'E:\learn\pythonCode\wyxces\files\ddtTest.json')
+    @file_data(r'D:\code\myPython\unittestAndDdt\ddtTest.json')
     def test_json(self,json_value):
         print('----test_json----(json_value)', (json_value))
         print(json_value)
