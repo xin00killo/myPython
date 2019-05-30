@@ -7,10 +7,10 @@ from email.header import Header
 
 mail_port = 25
 mail_host = 'smtp.163.com'
-mail_user = 'xin00killo@163.com'
+mail_user = 'xin01killo@163.com'
 mail_pass = '9999'
 
-sender = 'xin00killo@163.com'
+sender = mail_user
 receivers = ['xin01killo@163.com', 'xin02killo@163.com']
 
 # Python发送HTML格式的邮件与发送纯文本消息的邮件不同之处就是
@@ -22,19 +22,20 @@ content = '''
     <p><a href='http://www.baidu.com'>这是一个会跳转到百度首页的连接</a></p>
 '''
 
-message = MIMEText(content, 'html', 'utf-8')
-message['From'] = 'xin00killo<xin00killo@163.com>'
-message['To'] = ','.join(receivers)
+msgObj = MIMEText(content, 'html', 'utf-8')
+msgObj['From'] = sender
+msgObj['To'] = ','.join(receivers)
+msgObj['Cc'] = mail_user  # 这个是抄送的意思不？
 
 
-title = 'wyx python html'
-message['Subject'] = Header(title, 'utf-8')
+subject = 'wyx python html'
+msgObj['Subject'] = Header(subject, 'utf-8')
 
 try:
     smtpObj = smtplib.SMTP()
     smtpObj.connect(host=mail_host, port=mail_port)
     smtpObj.login(user=mail_user, password=mail_pass)
-    smtpObj.sendmail(sender, receivers, message.as_string())
+    smtpObj.sendmail(sender, receivers, msgObj.as_string())
     print('邮件发送成功')
 except smtplib.SMTPException as smtpMsg:
     print('邮件发送失败：', smtpMsg)
