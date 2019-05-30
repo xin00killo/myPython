@@ -10,7 +10,7 @@ mail_port =25
 # 第三方 smtp服务配置
 mail_host = 'smtp.163.com'
 mail_user = 'xin00killo@163.com'
-mail_pass = 'xin00killo'
+mail_pass = '9999'
 # 邮件属性配置
 sender = 'xin00killo@163.com'
 receivers = ['xin01killo@163.com', 'xin02killo@163.com']
