@@ -30,10 +30,12 @@ print ("对应时间戳 : ", secs)
 print ("时间为: %s" % time.asctime(time.localtime(secs)))
 
 
-print('--------格式化----------------------------------')
+print('--------固定格式的格式化时间-----asctime----ctime-------------------------')
 # asctime  格式化成Sat Mar 28 22:24:24 2016形式
 print('格式化的时间asctime：', time.asctime(localtime))
 print ("格式化的时间time.ctime() :" , time.ctime())
+
+print('--------格式化----strftime------------------------------')
 # strftime 格式化时间
 print('格式化的时间 %a %b %d %H:%M:%S %Y：', time.strftime("%a %b %d %H:%M:%S %Y", localtime))
 print('格式化的时间 %A %B %d %H:%M:%S %Y：', time.strftime("%A %B %d %H:%M:%S %Y", localtime))
@@ -41,6 +43,7 @@ print('格式化的时间 %A %B %d %H:%M:%S %Y：', time.strftime("%A %B %d %H:%
 
 # 格式化成2016-03-20 11:45:39形式
 print('格式化的时间%Y-%m-%d %H:%M:%S：', time.strftime('%Y-%m-%d %H:%M:%S', localtime))
+print('格式化的时间%Y-%m-%d %X：', time.strftime('%Y-%m-%d %X', localtime))
 print('格式化的时间%y-%m-%d %H:%M:%S：', time.strftime('%y-%m-%d %H:%M:%S', localtime))
 
 # p  A.M  P.M
@@ -61,7 +64,13 @@ print('时区 %Z：', time.strftime("%Z", localtime))
 print('--------functions----------------------------------')
 # sleep
 print('当前时间为：', time.asctime(time.localtime()))
-print('time.sleep(10)')
-time.sleep(10)
+print('time.sleep(1)')
+time.sleep(1)
 print('当前时间为：', time.asctime(time.localtime()))
+
+
+print('---------格式化时间 to 时间元组-----------------------------------------')
+ftime = '2011-05-05 16:37:06'
+ptime = time.strptime(ftime, '%Y-%m-%d %X')
+print('ftime:', ftime, '\nptime:', ptime)
 
