@@ -4,12 +4,15 @@
 
 # 生成1个list?
 list1 = range(1,11)
-print('list1', type(list),list1)   # <class 'range'>
+print('list1', type(list1),list1)   # <class 'range'>
 
 # 生成1个list
 list2 = [i for i in range(1,101)]
-print('list2', type(list),list2)    # <class 'list'>
+print('list2', type(list2),list2)    # <class 'list'>
 
+# 生成1给list
+list0 = list(range(1,11))
+print('list0', type(list0),list0)    # <class 'list'>
 
 # 列表切片
 list3 = list2[2:51:3]
