@@ -6,6 +6,8 @@
 利用global 修改全局变量
 '''
 
+from basic import global_
+
 g1 = 'g1.1'
 print("g1 = 'g1':",g1)
 

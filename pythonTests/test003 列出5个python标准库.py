@@ -3,11 +3,14 @@
 
 '''
 3、列出5个python标准库
-os：提供了不少与操作系统相关联的函数
-sys:   通常用于命令行参数
-re:   正则匹配
-math: 数学运算
 datetime:处理日期时间
+re:   正则匹配
+
+
+sys:   通常用于命令行参数
+os：提供了不少与操作系统相关联的函数
+math: 数学运算
+
 
 
 文件通配符 glob
@@ -20,3 +23,7 @@ datetime:处理日期时间
 import glob
 # glob模块提供了一个函数用于从目录通配符搜索中生成文件列表:
 print(glob.glob('*.py'))
+
+import regex
+import dataAndTime
+
