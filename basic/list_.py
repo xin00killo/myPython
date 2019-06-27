@@ -6,7 +6,7 @@
 list1 = range(1,11)
 print('list1', type(list1),list1)   # <class 'range'>
 
-# 生成1个list
+# 生成1个list    这个方法叫做函数推导式
 list2 = [i for i in range(1,101)]
 print('list2', type(list2),list2)    # <class 'list'>
 
