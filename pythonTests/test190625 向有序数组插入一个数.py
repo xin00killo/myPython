@@ -6,12 +6,22 @@
 '''
 
 def myInsert(myList, num):
-    for i in range(0,len(myList)):
-        if num <= myList[i]:
-            myList.insert(i,num)
-            break
-        elif i == len(myList)-1:
-            myList.append(num)
+    length = len(myList)
+    if myList[0] <=myList[length-1]:   #添加判断 数组排序规则判断语句
+        for i in range(0,length):
+            if num <= myList[i]:
+                myList.insert(i,num)
+                break
+            elif i == length-1:
+                myList.append(num)
+    else:
+        for i in range(0,length):
+            if num > myList[i]:
+                myList.insert(i,num)
+                break
+            elif i == length-1:
+                myList.append(num)
+
     return myList
 
 def getNum(num=None):
@@ -28,4 +38,5 @@ if __name__ == '__main__':
     myList = [1,3,5,6,9,11,15,16]
     # num = getNum()
     # print('num', num)
-    print('插入数据后的结果：\n\t',myInsert(myList, getNum()))
+    myList = myInsert(myList, getNum())
+    print('插入数据后的结果：\n\t',myList)

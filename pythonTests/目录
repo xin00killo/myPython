@@ -30,7 +30,6 @@ GIL 是python的全局解释器锁，同一进程中假如有多个线程运行�
 16、<div class="nam">中国</div>，用正则匹配出标签里面的内容（“中国”），其中class的类名是不确定的
 17、python中断言方法举例
 20、python2和python3区别？列举5个
-1、Python3 使用 print 必须要以小括号包裹打印内容，比如 print('hi')
 21、列出python中可变数据类型和不可变数据类型，并简述原理
 22、s = "ajldjlajfdljfddd"，去重并从小到大排序输出"adfjl"
 23、用lambda函数实现两个数相乘
