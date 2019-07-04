@@ -51,7 +51,13 @@ print('list3删除列表中下标为0的元素：', list3)
 
 # 反转,无返回
 list3.reverse()
-print('反转后的数据为：', list3)
+print('.reverse()反转后的数据为：', list3)
+
+# 反转,有返回，返回一个生成器
+print('reversed反转后的数据为：' )
+for x in reversed(list3):
+    print(x)
+
 
 # 返回排序结果，不改变原列表
 print('排序：', sorted(list3), '列表：', list3)
