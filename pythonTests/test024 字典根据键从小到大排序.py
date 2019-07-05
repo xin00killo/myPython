@@ -23,7 +23,7 @@ def mysort(flist):
     # print('list',list)
     return flist
 
-def fun(dict):
+def fun01(dict):
     keys = list(dict.keys())
     # print(keys,type(keys))
     # keys= sorted(keys)
@@ -37,5 +37,13 @@ def fun(dict):
     print('按key值排序后的字典为：',newdict)
 
 
+def fun02(dict):
+    list = sorted(dict.items(), key=lambda x:x[0])
+    print(list)
+    newdict = {}
+    for l in list:
+        newdict[l[0]]=l[1]
+    print('排序后的新字典：',newdict)
 
-fun(mydict)
+fun01(mydict)
+fun02(mydict)
