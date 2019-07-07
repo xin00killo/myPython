@@ -23,7 +23,7 @@ def mysort(flist):
     # print('list',list)
     return flist
 
-def fun01(dict):
+def fun01(dict): #自己慢慢想
     keys = list(dict.keys())
     # print(keys,type(keys))
     # keys= sorted(keys)
@@ -37,7 +37,7 @@ def fun01(dict):
     print('按key值排序后的字典为：',newdict)
 
 
-def fun02(dict):
+def fun02(dict):    # 百度来的
     list = sorted(dict.items(), key=lambda x:x[0])
     print(list)
     newdict = {}
