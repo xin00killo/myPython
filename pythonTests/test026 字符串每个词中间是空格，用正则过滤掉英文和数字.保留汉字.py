@@ -10,7 +10,7 @@ import re
 
 # me
 str = "not 404 found 张三 99 深圳"
-str = re.sub(r'[a-z0-9_]','',str)  #将字母 数字都替换掉，等于删除啦
+str = re.sub(r'[a-z0-9]','',str)  #将字母 数字都替换掉，等于删除啦
 print(str)
 str = re.findall(r'\w.*',str) # 从字符开始匹配到结尾
 print(str,type(str))
