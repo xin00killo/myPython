@@ -25,10 +25,27 @@ zip3 = zip(list1,list3)
 new_list3 = list(zip3)
 print(zip3,new_list3)   # 元素个数与最短的列表一致   <zip object at 0x00000000005E6A88> [(1, 'a'), (2, 'b')]
 
-print('---zip(* )-------------------------------------------')
+
+print('---zip(l,l[1:])-------------------------------------')
+list4 = ['a', 'b', 'c', 'd', 'e','f']
+print (list4)
+zip4 = zip(list4,list4[1:])
+new_list4 = list(zip4)
+print(zip4,new_list4)
+
+print('---zip(* )------解压-------------------------------------')
 unzip1 = zip(* new_list1)
 zlist1 = list(unzip1)
 print(unzip1, zlist1)
 unzip3 = zip(* new_list3)
 zlist3 = list(unzip3)
 print(unzip3, zlist3)
+
+print('---zip(* )------二维矩阵变换(矩阵的行列互换)-------------------------------------')
+l1=[[1,2,3],[4,5,6],[7,8,9]]
+print([[j[i] for j in l1] for i in range(len(l1[0]))])
+for i in zip(*l1):
+     i = list(i)
+     print(i)
+
+
