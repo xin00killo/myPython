@@ -14,9 +14,9 @@ print(random.randrange(0,100,2))
 print(random.random())
 print(random.uniform(1,10))
 
-# 随机字符：
+# 随机字符： (可以重复)
 str = 'abcdefghijklmnopqrstuvwxyz!@#$%^&*()'
-print(random.choice(str))
+print("随机字符",random.choice(str))
 
 # 多个字符中生成指定数量的随机字符：
 print(random.sample(str,5))
@@ -35,6 +35,15 @@ list02 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 random.shuffle(list02)
 print(list02)
 
-# 多个字符串中选取指定数量的字符串
-list03 = ['zs','ys','x','ws','vs','us']
-print(random.choice(list03))
+# # 多个字符串中选取指定数量的字符串
+# list03 = ['zs','ys','x','ws','vs','us']
+# print(random.choice(list03))
+
+
+# 随机生成 指定长度，可重复的字符串
+exam_choice_list = [random.choice(string.ascii_letters + string.digits) for _ in range(50)]
+print(exam_choice_list)
+print(len(exam_choice_list))
+exam_choice_list2 = list(set(exam_choice_list))
+print(exam_choice_list2)
+print(len(exam_choice_list2))
