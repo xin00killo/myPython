@@ -35,3 +35,11 @@ list04 = [j for i in list03 if len(i)>1 for j in i if j%2 == 0]
 print(list04)
 
 
+
+#得到列表中相同元素的坐标集合
+num_list = list(range(1,11))
+num_list.extend(list(range(1,15)))
+print(num_list)
+index = [i for i, x in enumerate(num_list) if x == max(num_list)]
+print(num_list,index)
+

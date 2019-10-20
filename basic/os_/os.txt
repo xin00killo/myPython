@@ -1,0 +1,30 @@
+adfasf
+asd
+f
+asd
+632561.
+
+用os.write方法，f2文件操作符，写入追加写入信息？
+fd2=os.fdopen(f2,'a+')
+fd2.write
+
+用os.write方法，f2文件操作符，写入追加写入信息？
+fo=os.fdopen(f2,'a+')
+fo.write  д���ַ��� 
+os.write方法写入数据
+用os.write方法，f2文件操作符，写入追加写入信息？
+fo=os.fdopen(f2,'a+')
+fo.write  д���ַ��� 
+os.write方法写入数据
+用os.write方法，f2文件操作符，写入追加写入信息？
+fo=os.fdopen(f2,'a+')
+fo.write  д���ַ��� 
+os.write方法写入数据
+用os.write方法，f2文件操作符，写入追加写入信息？
+fo=os.fdopen(f2,'a+')
+fo.write  д���ַ��� 
+os.write方法写入数据
+用os.write方法，f2文件操作符，写入追加写入信息？
+fo=os.fdopen(f2,'a+')
+fo.write  д���ַ��� 
+os.write方法写入数据

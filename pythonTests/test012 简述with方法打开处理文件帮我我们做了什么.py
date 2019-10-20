@@ -15,7 +15,7 @@ try:
     str = f.read()
     print(str)
 except:
-    pass
+    print('no with')
 finally:
     f.close()
 
@@ -23,6 +23,8 @@ finally:
 但是每次都这么写实在太繁琐，所以，Python引入了with语句来自动帮我们调用close()方法：
 with 的作用就是调用close（）方法
 '''
-
-with open( '../basic/file_/myfile.text', 'r' ) as f:
-    print( f.read() )
+try:
+    with open( '../basic/file_/myfile.text', 'r' ) as f:
+        print( f.read() )
+except:
+    print('with')
